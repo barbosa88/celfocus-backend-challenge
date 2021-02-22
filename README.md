@@ -56,23 +56,28 @@ We suggest to use <a href="https://start.spring.io/" target="_blank">Spring init
 
 
 # Evaluation Criteria
-
 The following points should be taken into consideration by the candidate to make sure the code submitted is readable and in general, easy to analyze by the evaluating team:
-- Effective class, method, and variable names - Names chosen for classes, methods, and variables should effectively convey the purpose and meaning of the named entity;
+- Effective class, method, and variable names  
+Names chosen for classes, methods, and variables should effectively convey the purpose and meaning of the named entity;
 
-- Effective top-down decomposition of algorithms - Avoid code duplication by factoring out common code into separate routines. Routines should be highly cohesive. Each routine should perform a single task or a small number of highly related tasks. Routines that perform multiple tasks should call different subroutines to perform each subtask. Routines should be relatively short in most cases;
+- Effective top-down decomposition of algorithms  
+Avoid code duplication by factoring out common code into separate routines. Routines should be highly cohesive. Each routine should perform a single task or a small number of highly related tasks. Routines that perform multiple tasks should call different subroutines to perform each subtask. Routines should be relatively short in most cases;
 
-- Code layout should be readable and consistent - The layout of your code should be readable and consistent, giving attention to things like placement of curly braces, code indentation, wrapping of long lines, the layout of parameter lists, and others;
+- Code layout should be readable and consistent  
+The layout of your code should be readable and consistent, giving attention to things like placement of curly braces, code indentation, wrapping of long lines, the layout of parameter lists, and others;
 
-- Effective source tree directory structure - The source code is organized into subdirectories, making clear the separation of concerns and layers of the application;
+- Effective source tree directory structure  
+The source code is organized into subdirectories, making clear the separation of concerns and layers of the application;
 
-- Effective file organization - Source code is organized into multiple files. Each class is placed in a separate file. Lumping all of your code in one or two files is not acceptable;
+- Effective file organization  
+Source code is organized into multiple files. Each class is placed in a separate file. Lumping all of your code in one or two files is not acceptable;
 
-- Correct exception handling - The program handles exceptions correctly, treating any error gracefully;
+- Correct exception handling  
+The program handles exceptions correctly, treating any error gracefully;
 
-- Good unit test cases - The unit test covers all application layers. In this exercise at least java unit tests should be implemented;
+- Good unit test cases  
+The unit test covers all application layers. In this exercise at least java unit tests should be implemented;
 
 
 # Submission
-
 To submit the code for the exercise, the candidate should fork the main branch and share the link of the fork by email.
