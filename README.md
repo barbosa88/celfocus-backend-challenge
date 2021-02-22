@@ -1,11 +1,10 @@
 # Challenge
-Implement a RESTful API to manage a shopping cart.
+Implement a RESTful API to manage a shopping cart, using the technology stack described below. 
 
-## API First
-At this stage, a swagger file must be created according to the resources and operations described below.
 
-## API Resources
-This API will manage at least 1 resource (carts).  
+## Data Model
+This API should manage at least one resource - shopping cart - but others may be created to support the implementation.
+
 A cart can be described by the following properties:
 - Creation date
 - Status
@@ -15,41 +14,72 @@ A cart can be described by the following properties:
 - Price
 - Checksum
 
+
 An item can be described by the following properties:
 - Name
 - Description
 - Unit price
 - Quantity
 
-## API Operations
-This API must support the following operations:
-- Retrieve all carts (with filters support);
+
+## Requirements
+This API should implement the following operations to manage the Shopping Cart resource:
+- Retrieve all carts (with filtering support);
 - Create a cart;
 - Update a cart;
 - Remove a cart;
 
-## API Notes
-- Every cart expires after 3hours of its creation;
-- No operation is allowed after the cart is expired;
-- Cart status must not be saved in the database;
+Managing cart items can be done in different ways, choose the best option which allows you update individual item quantity or remove a specific item from the cart.
+
+Additionally, the api should be able to calculate a checksum of the Shopping Cart:
 - Support 2 types of checksum generator (eg: MD5, Base64). The checksum must be returned within the resource;
 - Use the following properties to generate the checksum: Items, delivery address & owner;
 - The checksum to use must be defined in the application properties file;
-- Please consider the best approach to manage the cart items, for instance: How to remove an item?;
 
+Take in consideration that:
+- Every cart expires after 3hours of its creation;
+- No operation is allowed after the cart is expired;
+- Cart status must not be saved in the database;
+  
 
-## Implementation
-Use the following technology stack:
+## Technology Stack
+The candidate should use the following tools / frameworks to support the implementation of the API:
 - Java 8 (or 11)
 - Spring boot
 - MongoDB
 - Junit/Mockito
-- Lombok/Mapstruct (Not mandatory, but appreciated :))
 - Maven
+- Lombok/Mapstruct (not mandatory, but appreciated)
 
+  
 We suggest to use <a href="https://start.spring.io/" target="_blank">Spring initializr</a> to generate your project.
 
-## Delivery Notes
-Please fork this repository and send by mail.
+
+# Evaluation Criteria
+
+The following points should be taken into consideration by the candidate to make sure the code submitted is readable and in general, easy to analyze by the evaluating team:
+1. Effective class, method, and variable names
+   Names chosen for classes, methods, and variables should effectively convey the purpose and meaning of the named entity;
+
+2. Effective top-down decomposition of algorithms
+   Avoid code duplication by factoring out common code into separate routines. Routines should be highly cohesive. Each routine should perform a single task or a small number of highly related tasks. Routines that perform multiple tasks should call different subroutines to perform each subtask. Routines should be relatively short in most cases;
+
+3. Code layout should be readable and consistent
+   The layout of your code should be readable and consistent, giving attention to things like placement of curly braces, code indentation, wrapping of long lines, the layout of parameter lists, and others;
+
+4. Effective source tree directory structure
+   The source code is organized into subdirectories, making clear the separation of concerns and layers of the application;
+
+5. Effective file organization
+   Source code is organized into multiple files. Each class is placed in a separate file. Lumping all of your code in one or two files is not acceptable;
+
+6. Correct exception handling
+   The program handles exceptions correctly, treating any error gracefully;
+
+7. Good unit test cases
+   The unit test covers all application layers. In this exercise at least java unit tests should be implemented;
 
 
+# Submission
+
+To submit the code for the exercise, the candidate should fork the main branch and share the link of the fork by email.
