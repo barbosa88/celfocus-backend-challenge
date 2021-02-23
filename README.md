@@ -80,4 +80,10 @@ The unit test covers all application layers. In this exercise at least java unit
 
 
 # Submission
-To submit the code for the exercise, the candidate should fork the main branch and share the link of the fork by email.
+To submit the code for the exercise, the candidate should clone the repository, as described in the following link https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template. In the step 5 of the instructions, you should make your repo PRIVATE.
+After the private repo is created, you must give permissions to the following list of users:
+- joserbatista
+- barbosa88
+- lalmeida78
+
+<b>DO NOT FORK</b> the original repo!
