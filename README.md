@@ -46,13 +46,19 @@ Take in consideration that:
 The candidate should use the following tools / frameworks to support the implementation of the API:
 - Java 8 (or 11)
 - Spring boot
-- MongoDB
+- H2 DB
 - Junit/Mockito
 - Maven
 - Lombok/Mapstruct (not mandatory, but appreciated)
 
-  
-We suggest to use <a href="https://start.spring.io/" target="_blank">Spring initializr</a> to generate your project.
+
+We suggest using our minimal setup provided in the template to minimize setup time.  
+We expect you to add other relevant dependencies required for your own implementation.  
+
+#### Default configuration 
+- Server is running on port 8083
+- H2 console is available at http://localhost:8083/h2-console/
+- Swagger UI is available at http://localhost:8083/
 
 
 # Evaluation Criteria
