@@ -27,7 +27,6 @@ This API should implement the following operations to manage the Shopping Cart r
 - Retrieve all carts (with filtering support);
 - Create a cart;
 - Update a cart;
-- Remove a cart;
 
 Managing cart items can be done in different ways, choose the best option which allows you update individual item quantity or remove a specific item from the cart.
 
@@ -38,7 +37,7 @@ Additionally, the api should be able to calculate a checksum of the Shopping Car
 
 Take in consideration that:
 - Every cart expires after 3hours of its creation;
-- No operation is allowed after the cart is expired;
+- No mutation is allowed after the cart is expired;
 - Cart status must not be saved in the database;
   
 
@@ -52,8 +51,8 @@ The candidate should use the following tools / frameworks to support the impleme
 - Lombok/Mapstruct (not mandatory, but appreciated)
 
 
-We suggest using our minimal setup provided in the template to minimize setup time.  
-We expect you to add other relevant dependencies required for your own implementation.  
+We suggest using our minimal setup provided in the template to minimize setup time.
+Please add other relevant dependencies required for your own implementation.  
 
 #### Default configuration 
 - Server is running on port 8083
@@ -68,6 +67,9 @@ Names chosen for classes, methods, and variables should effectively convey the p
 
 - Effective top-down decomposition of algorithms  
 Avoid code duplication by factoring out common code into separate routines. Routines should be highly cohesive. Each routine should perform a single task or a small number of highly related tasks. Routines that perform multiple tasks should call different subroutines to perform each subtask. Routines should be relatively short in most cases;
+
+- Knowledge of patterns
+The solution makes good use of patterns, like strategy, factory, etc. when they are relevant for the implementation. Also, the code follows good coding practices and principles (e.g. SOLID);
 
 - Code layout should be readable and consistent  
 The layout of your code should be readable and consistent, giving attention to things like placement of curly braces, code indentation, wrapping of long lines, the layout of parameter lists, and others;
