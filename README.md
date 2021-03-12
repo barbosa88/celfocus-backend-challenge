@@ -68,7 +68,7 @@ Names chosen for classes, methods, and variables should effectively convey the p
 - Effective top-down decomposition of algorithms  
 Avoid code duplication by factoring out common code into separate routines. Routines should be highly cohesive. Each routine should perform a single task or a small number of highly related tasks. Routines that perform multiple tasks should call different subroutines to perform each subtask. Routines should be relatively short in most cases;
 
-- Knowledge of patterns
+- Knowledge of patterns  
 The solution makes good use of patterns, like strategy, factory, etc. when they are relevant for the implementation. Also, the code follows good coding practices and principles (e.g. SOLID);
 
 - Code layout should be readable and consistent  
